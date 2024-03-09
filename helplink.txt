@@ -1,3 +1,80 @@
 Conventional Commits: https://www.conventionalcommits.org/e...
 
 Mark Down Cheat Sheet: https://www.markdownguide.org/cheat-s...
+
+
+following comments are used at first time
+PS K:\git repo\first-repo>  git config --global user.name "kovendhan5"
+PS K:\git repo\first-repo> git config --global user.email "kovendhanofficial5@gmail.com"
+PS K:\git repo\first-repo> git status
+On branch newbranch
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   help.txt
+
+PS K:\git repo\first-repo> git push
+fatal: The current branch newbranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin newbranch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS K:\git repo\first-repo> git push.autoSetupRemote
+git: 'push.autoSetupRemote' is not a git command. See 'git --help'.
+PS K:\git repo\first-repo>  git push origin newbranch
+To https://github.com/kovendhan5/first-repo.git
+ ! [rejected]        newbranch -> newbranch (non-fast-forward)
+error: failed to push some refs to 'https://github.com/kovendhan5/first-repo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS K:\git repo\first-repo> git push origin new
+Everything up-to-date
+PS K:\git repo\first-repo> git push .\helplink.txt
+fatal: invalid gitfile format: .\helplink.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS K:\git repo\first-repo> git add .\helplink.txt
+PS K:\git repo\first-repo> git commit -m "feat : new file updated"
+[newbranch ce65a5d] feat : new file updated
+PS K:\git repo\first-repo> git push
+fatal: The current branch newbranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin newbranch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS K:\git repo\first-repo> git push origin newbranch
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 745 bytes | 745.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kovendhan5/first-repo.git
+   45d3285..ce65a5d  newbranch -> newbranch
+PS K:\git repo\first-repo> git status
+On branch newbranch
+nothing to commit, working tree clean
+PS K:\git repo\first-repo> git checkout
+PS K:\git repo\first-repo> git branch
+  main
+  new
+* newbranch
+PS K:\git repo\first-repo> git branch -a
+  main
+  new
+* newbranch
+  remotes/origin/main
+  remotes/origin/new
+  remotes/origin/newbranch
+PS K:\git repo\first-repo>
