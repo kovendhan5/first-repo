@@ -1,0 +1,133 @@
+PS K:\git repo> git config --global user.name "kovendhan5"
+PS K:\git repo> git config --global user.email "kovendhanofficial5@gmail.com
+"
+PS K:\git repo> git clone https://github.com/kovendhan5/first-repo.git
+Cloning into 'first-repo'...
+warning: You appear to have cloned an empty repository.
+PS K:\git repo> cd .\first-repo\
+PS K:\git repo\first-repo> git add .\ko.txt
+PS K:\git repo\first-repo> git commit -m "Docs : added ko"
+[main (root-commit) 930dace] Docs : added ko
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ko.txt
+PS K:\git repo\first-repo> git push
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kovendhan5/first-repo.git
+ * [new branch]      main -> main
+PS K:\git repo\first-repo> git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 931 bytes | 93.00 KiB/s, done.
+From https://github.com/kovendhan5/first-repo
+   930dace..1e15d98  main       -> origin/main
+Updating 930dace..1e15d98
+Fast-forward
+ ko.txt | 1 +
+ 1 file changed, 1 insertion(+)
+PS K:\git repo\first-repo> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS K:\git repo\first-repo> git add .
+PS K:\git repo\first-repo> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        new file:   new.css
+
+PS K:\git repo\first-repo> git commit -m "feat : new files updated"
+[main 3bbad21] feat : new files updated
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 new.css
+PS K:\git repo\first-repo> git diff
+PS K:\git repo\first-repo> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS K:\git repo\first-repo> git push origin new
+error: src refspec new does not match any
+error: failed to push some refs to 'https://github.com/kovendhan5/first-repo.git'
+PS K:\git repo\first-repo> git checkout new
+error: pathspec 'new' did not match any file(s) known to git
+PS K:\git repo\first-repo>  git checkout new
+error: pathspec 'new' did not match any file(s) known to git
+PS K:\git repo\first-repo> git checkout new
+error: pathspec 'new' did not match any file(s) known to git
+PS K:\git repo\first-repo> git push origin new
+error: src refspec new does not match any
+error: failed to push some refs to 'https://github.com/kovendhan5/first-repo.git'
+PS K:\git repo\first-repo> git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kovendhan5/first-repo.git
+   1e15d98..3bbad21  main -> main
+PS K:\git repo\first-repo> git checkout new
+error: pathspec 'new' did not match any file(s) known to git
+PS K:\git repo\first-repo> git branch
+* main
+PS K:\git repo\first-repo> git checkout new
+error: pathspec 'new' did not match any file(s) known to git
+PS K:\git repo\first-repo>  git checkout new
+error: pathspec 'new' did not match any file(s) known to git
+PS K:\git repo\first-repo> git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 923 bytes | 92.00 KiB/s, done.
+From https://github.com/kovendhan5/first-repo
+ * [new branch]      new        -> origin/new
+Already up to date.
+PS K:\git repo\first-repo>  git checkout new
+branch 'new' set up to track 'origin/new'.
+Switched to a new branch 'new'
+PS K:\git repo\first-repo> git status
+On branch new
+Your branch is up to date with 'origin/new'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   k.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS K:\git repo\first-repo> git add .
+PS K:\git repo\first-repo> git status
+On branch new
+Your branch is up to date with 'origin/new'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   k.txt
+
+PS K:\git repo\first-repo> git commit -m "Docs : new update"
+[new 084a066] Docs : new update
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS K:\git repo\first-repo> git push origin new
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kovendhan5/first-repo.git
+   b10c5b4..084a066  new -> new
+PS K:\git repo\first-repo> git checkout -b "newbranch"
+Switched to a new branch 'newbranch'
+PS K:\git repo\first-repo>
