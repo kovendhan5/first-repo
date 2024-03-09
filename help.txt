@@ -130,4 +130,90 @@ To https://github.com/kovendhan5/first-repo.git
    b10c5b4..084a066  new -> new
 PS K:\git repo\first-repo> git checkout -b "newbranch"
 Switched to a new branch 'newbranch'
+PS K:\git repo\first-repo> git add .\help.txt
+warning: in the working copy of 'help.txt', LF will be replaced by CRLF the next time Git touches it
+PS K:\git repo\first-repo> git status
+On branch newbranch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   help.txt
+
+PS K:\git repo\first-repo> git commit -m "docs : new document created"
+[newbranch d38c5a7] docs : new document created
+ 1 file changed, 133 insertions(+)
+ create mode 100644 help.txt
+PS K:\git repo\first-repo> git status
+On branch newbranch
+nothing to commit, working tree clean
+PS K:\git repo\first-repo> git push origin newbranch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.56 KiB | 1.56 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'newbranch' on GitHub by visiting:
+remote:      https://github.com/kovendhan5/first-repo/pull/new/newbranch
+remote:
+To https://github.com/kovendhan5/first-repo.git
+ * [new branch]      newbranch -> newbranch
+PS K:\git repo\first-repo> git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> newbranch
+
+PS K:\git repo\first-repo> git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS K:\git repo\first-repo> git pull new
+fatal: 'new' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS K:\git repo\first-repo> git push
+fatal: The current branch newbranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin newbranch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS K:\git repo\first-repo> git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> newbranch
+
+PS K:\git repo\first-repo> git pull origin newbranch
+From https://github.com/kovendhan5/first-repo
+ * branch            newbranch  -> FETCH_HEAD
+Already up to date.
+PS K:\git repo\first-repo> git push
+fatal: The current branch newbranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin newbranch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS K:\git repo\first-repo> git push origin newbranch
+Everything up-to-date
 PS K:\git repo\first-repo>
